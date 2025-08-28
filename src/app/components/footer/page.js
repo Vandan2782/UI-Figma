@@ -96,7 +96,9 @@ const Footer = () => {
         </div>
 
         <div className="copyRightTxt">
-            <p className="text-center copyTxt">Copyright © 2025 LeadCRM. All Rights Reserved.</p>
+          <p className="text-center copyTxt">
+            Copyright © 2025 LeadCRM. All Rights Reserved.
+          </p>
         </div>
       </div>
     </>

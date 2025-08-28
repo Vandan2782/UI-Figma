@@ -19,17 +19,17 @@ const Navbar = () => {
 
   return (
     <div className={`navbarTop ${scrolled ? "scrolled" : ""}`}>
-      {/* Logo Section */}
+    
       <div className="leftLogoSec">
         <Image src={logo} alt="logo" className="logoImg" priority />
       </div>
 
-      {/* Toggle Icon (Mobile) */}
+     
       <div className="toggleMenu" onClick={() => setMenuOpen(!menuOpen)}>
         <i className={`fa-solid ${menuOpen ? "fa-xmark" : "fa-bars"}`}></i>
       </div>
 
-      {/* Menu */}
+    
       <div className={`menuContainer ${menuOpen ? "active" : ""}`}>
         <div className="middleLinkSec">
           <p className="liColor">

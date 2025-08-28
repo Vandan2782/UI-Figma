@@ -1,0 +1,207 @@
+.carousalSec {
+  height: auto;
+  /* background-color: red;  */
+}
+
+/* Header Section */
+.textBtnSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+p.peopleTxt {
+  color: #090F4E;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 100%;
+  margin: 0;
+}
+
+/* Buttons */
+.btnLeft,
+.btnRight {
+  border: 1px solid #090F4E;
+  padding: 8px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+  color: #090F4E;
+}
+
+.btnLeft:hover,
+.btnRight:hover {
+  background: #090F4E;
+  color: white;
+}
+
+.btnLeft:focus,
+.btnRight:focus {
+  outline: none !important;
+  box-shadow: none; 
+}
+
+.btnLeft:active,
+.btnRight:active {
+  background: #090F4E;
+  color: white;
+  transform: scale(0.95);
+}
+
+
+.btnLeft.disabled,
+.btnRight.disabled {
+  background: #ccc !important;
+  color: #666 !important;
+  border-color: #ccc !important;
+  cursor: not-allowed;
+  opacity: 0.6;
+  padding: 10px 12px;
+}
+
+/* Carousel */
+.carouselWrapper {
+  overflow: hidden;
+}
+
+.carouselInner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.card1 {
+  flex: 0 0 calc(100% / 3);
+  max-width: 32%;
+  box-sizing: border-box;
+  background-color: #F9F0F8;
+  border-radius: 20px;
+  border: 1px solid #EEEFFFFC;
+  padding: 20px;
+  margin: 0 10px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.upperTxtSection {
+  color: #2C2C2C;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+/* Stars */
+.starSec {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.leftSideStar {
+  background: white;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.rightSideStar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.starImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Profile Section */
+.profileSec {
+  padding: 10px 0 0;
+  border-top: 1px solid #7A7A7A4F;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.leftSecImage {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.rightSideUserName p {
+  margin: 0;
+  line-height: 20px;
+}
+
+p.userName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #090F4E;
+}
+
+p.userRole {
+  font-size: 14px;
+  color: #696969;
+  font-weight: 400;
+}
+
+button.btnLeft {
+    padding: 10px 12px;
+}
+
+button.btnRight {
+    padding: 10px 12px;
+}
+
+@media (max-width: 992px) {
+  .card1 {
+    flex: 0 0 calc(100% / 2);
+    max-width: 48%;
+  }
+
+  p.peopleTxt {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .textBtnSec {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  p.peopleTxt {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .card1 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .carouselInner {
+    gap: 0;
+  }
+
+  .btn{
+    position: relative;
+    top: 1rem;
+    right: 16px;
+  }
+}
