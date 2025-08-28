@@ -1,0 +1,159 @@
+.navbarTop {
+  height: 80px; /* fixed height */
+  padding: 0 30px; /* only horizontal padding */
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between; /* logo | links | buttons */
+  align-items: center; /* vertical center */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.navbarTop.scrolled {
+  box-shadow: 0px 8px 24px 0px #959DA51A;
+}
+
+.leftLogoSec {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.leftLogoSec .logoImg {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.middleLinkSec {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* vertical center */
+  gap: 40px;
+  height: 100%;
+}
+
+p.liColor {
+  display: flex;
+  align-items: center; /* fix text + chevron icon alignment */
+  color: #222222;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+p.liColor:hover {
+  color: #2d96bc;
+}
+
+.btnSection {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* vertical center */
+  gap: 1rem;
+}
+
+.getAccBtn {
+  background-color: #2d96bc;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  min-width: 215px;
+  height: 52px;
+}
+.getAccBtn:hover {
+  background-color: #247b9c;
+  transform: translateY(-2px);
+}
+
+.loginBtn {
+  min-width: 130px;
+  height: 52px;
+  color: #2d96bc;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #2d96bc;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.loginBtn:hover {
+  background: #f0f9fc;
+  transform: translateY(-2px);
+}
+
+.toggleMenu {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .middleLinkSec {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .toggleMenu {
+    display: block;
+  }
+
+  .menuContainer {
+    position: absolute;
+    top: 80px; /* same as navbar height */
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    display: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .menuContainer.active {
+    display: flex;
+  }
+
+  .middleLinkSec {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .btnSection {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .getAccBtn,
+  .loginBtn {
+    width: 100%;
+  }
+}
