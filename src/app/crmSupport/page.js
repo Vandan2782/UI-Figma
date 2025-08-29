@@ -16,7 +16,7 @@ const SupportedCrm = () => {
           </p>
         </div>
 
-        <div className='chartSec'>
+        <div className='chartSec mlr-40'>
           <Image src={chart} alt='chartImg' className='img-fluid' />
         </div>
 

@@ -45,19 +45,19 @@ const Dashboard = () => {
         <div className="ratingCard">
           <Image src={chromLogo} alt="Chrome" className="ratingIcon" />
           <Image src={starBrown} alt="stars" className="starsImg" />
-          {/* <Image src={starBrown} alt="stars" className="starsImg" />
           <Image src={starBrown} alt="stars" className="starsImg" />
           <Image src={starBrown} alt="stars" className="starsImg" />
-          <Image src={starBrown} alt="stars" className="starsImg" /> */}
+          <Image src={starBrown} alt="stars" className="starsImg" />
+          <Image src={starBrown} alt="stars" className="starsImg" />
           <span className="ratingText">5/5</span>
         </div>
         <div className="ratingCard">
           <Image src={newRocket} alt="App" className="ratingIcon" />
           <Image src={starBrown} alt="stars" className="starsImg" />
-          {/* <Image src={starBrown} alt="stars" className="starsImg" />
           <Image src={starBrown} alt="stars" className="starsImg" />
           <Image src={starBrown} alt="stars" className="starsImg" />
-          <Image src={starBrown} alt="stars" className="starsImg" /> */}
+          <Image src={starBrown} alt="stars" className="starsImg" />
+          <Image src={starBrown} alt="stars" className="starsImg" />
 
           <span className="ratingText">5/5</span>
         </div>

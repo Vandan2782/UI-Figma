@@ -5,6 +5,10 @@
   border-radius: 20px;
   padding: 30px 15px;
   position: relative;
+  background-image: url(../../assets/images/lines.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 p.mainTxt {

@@ -10,7 +10,7 @@ const LeadCRM = () => {
     <>
   <div className="ptb-80">
         <div className="ptb-40 leadCRM">
-        <p className="crmTxt">Join Thousands of Professionals Using LeadCRM</p>
+        <p className="crmTxt text-start">Join Thousands of Professionals Using LeadCRM</p>
         <Image src={Collabration} alt="coll" className="collbration"/>
         <div className="bannerWrapper">
           <Image src={banner} alt="bannerImg" className="bannerImg" />
