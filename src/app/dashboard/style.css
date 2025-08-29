@@ -1,0 +1,207 @@
+.dashboardSec {
+  background-image: url(../../assets/images/bgImg.png);
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.topSec {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 0.85px solid #9ACCFF;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #63657E;
+  background: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+}
+
+.topSec p {
+  margin: 0;
+}
+
+.rocketImg {
+  width: 22px;
+  height: 22px;
+}
+
+.textMiddle {
+  font-size: 52px;
+  color: #121212;
+  line-height: 1.3;
+  font-weight: 600;
+
+}
+
+.blueTxt {
+  color: #2D96BC;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+}
+
+.lineImg {
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 100%;
+  height: auto;
+}
+
+.lowerTxtDash {
+  font-size: 18px;
+  color: #363636;
+  line-height: 28px;
+  letter-spacing: 0px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+
+.workImg {
+  /* margin-top: 40px; */
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.ratingSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.ratingsWrapper {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ratingCard {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #121212;
+}
+
+.ratingIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.starsImg {
+  height: 18px;
+  width: auto;
+}
+
+.ratingText {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.btnWrapper {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.chromeBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chromeBtn span {
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+.chromeBtn strong {
+  font-weight: 600;
+}
+
+.chromeBtn:hover {
+  background: #000;
+}
+
+.chromeIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.trialBtn {
+  background: #7cff3c;
+  color: #000;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.trialBtn:hover {
+  background: #6ee635;
+}
+
+img.ratingIcon {
+    background: white;
+    padding: 9px;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .ratingCard {
+    width: 140px;
+    padding: 10px;
+  }
+
+  .starsImg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .ratingText {
+    font-size: 14px;
+  }
+
+  .chromeBtn, .trialBtn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .btnWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

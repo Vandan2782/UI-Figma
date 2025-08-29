@@ -14,7 +14,8 @@ import cardTwoImg from "../../assets/images/CardTwo.png";
 import cardThreeImg from "../../assets/images/CardThree.png";
 import cardFourImg from "../../assets/images/CardFour.png";
 import { Bungee_Outline } from "next/font/google";
-import Balls from "../../assets/images/Ball.png"
+import Balls from "../../assets/images/Ball.png";
+import TryButton from "../components/button/tryButton";
 
 const Work = () => {
   const steps = [
@@ -62,16 +63,20 @@ const Work = () => {
                 <p className="lowerTxt">{step.desc}</p>
               </div>
               <div className="lowerImg">
-                <Image src={step.img} alt={`img-${index + 1}`} className="img-fluid" />
+                <Image
+                  src={step.img}
+                  alt={`img-${index + 1}`}
+                  className="img-fluid"
+                />
               </div>
             </div>
           </div>
         ))}
       </div>
-            <div className="lowerBtnTxt text-center">
-            <button className="tryBtn">Try LeadCRM Now{" "}<i className="fa-solid fa-arrow-right"></i></button>
-                </div>
-                <Image src={Balls} alt="ball" className="img-fluid ball"/>
+      <div className="lowerBtnTxt text-center">
+        <TryButton text="Try LeadCRM Now"/>
+      </div>
+      <Image src={Balls} alt="ball" className="img-fluid ball" />
     </div>
   );
 };

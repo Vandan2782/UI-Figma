@@ -1,0 +1,52 @@
+.leadCRM {
+    height: auto;
+    background: #EAEFFA;
+    padding: 15px;
+    /* text-align: center; */
+    position: relative;
+    z-index: 999;
+}
+
+.crmTxt {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0px;
+    color: #090F4E;
+    margin-bottom: 20px;
+}
+
+
+/* .bannerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.bannerImg {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 12px;
+}
+
+img.collbration {
+    position: absolute;
+    right: 0;
+    top: -85px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+@media (max-width: 768px) {
+    .crmTxt {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .crmTxt {
+        font-size: 20px;
+    }
+}

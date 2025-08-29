@@ -1,0 +1,157 @@
+.linkdinSalesSec {
+    height: auto;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.headingSection {
+    position: relative;
+}
+
+p.text-center.headingTxt {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #090F4E;
+    position: relative;
+}
+
+p.text-center.headingTxtLower {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+    color: #4D4D4D;
+    position: relative;
+}
+
+
+img.robotImg {
+    position: absolute;
+    left: 0;
+    top: -50px;
+}
+
+.linkSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 2px solid #EDEDED;
+    padding: 15px 0;
+    flex-wrap: wrap;
+}
+
+p.linkSecLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+p.linkSecLink:hover {
+    color: #090F4E;
+}
+
+p.linkSecLink span img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+
+p.lowerContent {
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0px;
+    color: #4D4D4D;
+}
+
+span.redBadge {
+    color: #FF4C51;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    font-weight: 500;
+    background-color: #FFDCD4;
+    padding: 6px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.cardLink {
+    background: #F0F4FD;
+    height: auto;
+    padding: 15px;
+    box-shadow: 0px 2px 8px 0px #63636333;
+    border-radius: 12px;
+}
+
+p.innerCarddText {
+    color: #262626;
+    font-weight: 600;
+    line-height: 29px;
+    font-size: 18px;
+    letter-spacing: 0px;
+}
+
+p.lowerGreeenTxt {
+    color: #097737;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+
+}
+
+.cardImage{
+    border-radius: 12px;
+    position: relative;
+    bottom:-15px;
+}
+
+/* Active Tab Style */
+p.linkSecLink.active {
+  font-weight: 600;
+  color: #090F4E;
+  border-bottom: 2px solid #090F4E;
+  padding-bottom: 5px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .linkSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .headingTxt {
+    font-size: 28px !important;
+  }
+
+  .headingTxtLower {
+    font-size: 16px !important;
+  }
+
+  .cardLink {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headingTxt {
+    font-size: 22px !important;
+  }
+  .headingTxtLower {
+    font-size: 14px !important;
+  }
+}

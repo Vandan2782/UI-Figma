@@ -1,0 +1,54 @@
+.lowerCarousal {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.scroll-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-content {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+.card {
+  flex: 0 0 auto;
+  border-radius: 12px;
+  background: #fff;
+  min-width: 280px; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.featureIcon {
+  flex-shrink: 0;
+}
+
+.featureText {
+  font-size: 16px;
+  color: #555;
+}
+
+.featureText span {
+  font-weight: 600;
+  color: #161616; 
+}
+
+.card.d-flex.align-items-center.p-3.shadow-sm.mx-3 {
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

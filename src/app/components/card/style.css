@@ -1,0 +1,30 @@
+.cardLink {
+  background: #F0F4FD;
+  height: auto;
+  padding: 15px;
+  box-shadow: 0px 2px 8px 0px #63636333;
+  border-radius: 12px;
+}
+
+p.innerCarddText {
+  color: #262626;
+  font-weight: 600;
+  line-height: 29px;
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+
+p.lowerGreeenTxt {
+  color: #097737;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  cursor: pointer;
+}
+
+.cardImage {
+  border-radius: 12px;
+  position: relative;
+  bottom: -5px;
+}

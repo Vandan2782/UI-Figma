@@ -1,0 +1,271 @@
+.comparisonSection {
+  background: white;
+  position: relative;
+}
+
+.comparisonHeading {
+  font-size: 36px;
+  font-weight: 600;
+  color: #090f4e;
+  margin-bottom: 40px;
+}
+
+.comparisonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; 
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.comparisonCard {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 30px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImg {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cardImg img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cardHeader {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ff4d4f;
+}
+
+.cardHeader.green {
+  color: #097737;
+}
+
+.cardList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.cardList li {
+  margin-bottom: 18px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.cardList li span.red {
+  color: #ff4d4f;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.cardList li span.green {
+  color: #2bb673;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.cardList li .highlight {
+  background: #ffecec;
+  color: #ff4d4f;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.savedTime {
+  background: #eaffea;
+  color: #2bb673;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.vsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.vsLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ddd;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vsText {
+  background: #f9fbff;
+  padding: 6px 14px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #666;
+  position: relative;
+  z-index: 1;
+  /* border-radius: 50%; */
+  /* border: 2px solid #ddd; */
+}
+
+.comparisonCard.leftCard {
+  background: #FFF7F8;
+  border-radius: 18px;
+}
+
+img.arrowbtn {
+    position: relative;
+    left: -8px;
+    bottom: -28px;
+}
+
+p.textArrow {
+    position: absolute;
+    right: 30rem;
+    bottom: 8rem;
+    font-family: cursive;
+}
+
+p.leftMargin{
+    margin-left: 1.6rem;
+}
+
+p.leftMarginRight{
+    margin-left: 3rem;
+}
+
+
+@media (max-width: 768px) {
+  .comparisonWrapper {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .vsWrapper {
+    margin: 20px 0;
+    position: relative;
+  }
+
+  .vsLine {
+    display: none; 
+  }
+
+  .vsText {
+    border-radius: 8px;
+  }
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growLine {
+  0% { height: 0; }
+  100% { height: 100%; }
+}
+
+
+.comparisonHeading {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.comparisonCard {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.comparisonCard.leftCard {
+  animation-delay: 0.2s;
+}
+
+.comparisonCard.rightCard {
+  animation-delay: 0.4s;
+}
+
+.cardList li {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.vsLine {
+  animation: growLine 0.8s ease forwards;
+}
+
+
+@media (max-width: 768px) {
+  .comparisonWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vsLine {
+    display: none;
+  }
+
+  .vsText {
+    margin: 20px 0;
+  }
+
+  p.textArrow {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  img.arrowbtn {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 10px;
+  }
+
+  .cardList li {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .cardList li b {
+    display: block;
+  }
+}
