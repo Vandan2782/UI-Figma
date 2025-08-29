@@ -7,7 +7,7 @@ import chrome from "../../../assets/images/chrome.png";
 const Footer = () => {
   return (
     <>
-      <div className="footerSec">
+      <div className="footerSec mt-5">
         <div className="row col-12 ">
           <div className="col-md-2">
             <Image src={logo} alt="logoFooter" />

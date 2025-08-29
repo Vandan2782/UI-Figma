@@ -10,9 +10,6 @@ import ai from "../../assets/images/al.jpg";
 import bulk from "../../assets/images/bulk.jpg";
 import refresh from "../../assets/images/refresh.jpg";
 import card from "../../assets/images/cardImg.jpg";
-// import card2 from "../../assets/images/cardTwo.jpg";
-// import card3 from "../../assets/images/cardThree.jpg";
-// import card4 from "../../assets/images/cardFour.jpg";
 
 import CardLink from "../components/card/page";
 
@@ -20,12 +17,18 @@ const Sales = () => {
   // active tab state
   const [activeTab, setActiveTab] = useState("crm");
 
-  // tab data
+  // tab data with dynamic lowerContent
   const tabs = [
     {
       key: "crm",
       label: "CRM Data Enrichment",
       icon: crm,
+      lowerContent: (
+        <>
+          It’s hard to find the accurate contact data for every prospect with{" "}
+          <span className="redBadge">Incomplete Data</span>
+        </>
+      ),
       cards: [
         {
           title: "Here is how LeadCRM tackles data enrichment.",
@@ -43,6 +46,11 @@ const Sales = () => {
       key: "sync",
       label: "CRM Data Sync",
       icon: refresh,
+      lowerContent: (
+        <>
+          Keep your CRM data fresh and avoid <span className="redBadge">duplication</span> automatically
+        </>
+      ),
       cards: [
         {
           title: "Keep your CRM data always fresh and synced.",
@@ -60,6 +68,11 @@ const Sales = () => {
       key: "bulk",
       label: "Bulk Export & Enrichment",
       icon: bulk,
+      lowerContent: (
+        <>
+          Export leads in bulk and enrich them with <span className="redBadge">accurate data</span>
+        </>
+      ),
       cards: [
         {
           title: "Export leads in bulk & enrich with accurate data.",
@@ -77,6 +90,11 @@ const Sales = () => {
       key: "ai",
       label: "AI Productivity",
       icon: ai,
+      lowerContent: (
+        <>
+          Boost productivity using <span className="redBadge">AI-powered insights</span>
+        </>
+      ),
       cards: [
         {
           title: "Boost your workflow with AI-driven insights.",
@@ -92,12 +110,10 @@ const Sales = () => {
     },
   ];
 
-
   const currentTab = tabs.find((t) => t.key === activeTab);
 
   return (
     <div className="linkdinSalesSec">
-     
       <div className="headingSection">
         <Image src={robot} alt="robotImg" className="robotImg" />
         <p className="text-center headingTxt">
@@ -108,7 +124,6 @@ const Sales = () => {
         </p>
       </div>
 
-    
       <div className="linkSection mlr-20 d-flex">
         {tabs.map((tab) => (
           <p
@@ -125,10 +140,7 @@ const Sales = () => {
       </div>
 
       <div className="lowerLinkSec mlr-20 ptb-40">
-        <p className="lowerContent">
-          It’s hard to find the accurate contact data for every prospect with{" "}
-          <span className="redBadge">Incomplete Data</span>
-        </p>
+        <p className="lowerContent">{currentTab.lowerContent}</p>
 
         <div className="row">
           {currentTab.cards.map((card, idx) => (
